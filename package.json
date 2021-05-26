@@ -2,6 +2,7 @@
     "name": "rapyd-webpack-chrome-extension",
     "description": "Testing python for chrome extension",
     "authors": "Yonah Aviv",
+    "license": "MIT",
     "version": "1.0.0",
     "dependencies": {
         "@icon/heroicons-outline": "0.4.2-alpha.0",
