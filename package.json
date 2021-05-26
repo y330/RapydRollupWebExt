@@ -1,0 +1,23 @@
+{
+    "name": "rapyd-webpack-chrome-extension",
+    "description": "Testing python for chrome extension",
+    "authors": "Yonah Aviv",
+    "version": "1.0.0",
+    "dependencies": {
+        "@icon/heroicons-outline": "0.4.2-alpha.0",
+        "rapydscript": "0.5.62"
+    },
+    "scripts": {
+        "build": "npm run convert && rollup -c",
+        "start": "rollup -c -w",
+        "popup": "rapydscript src/python/popup.pyj > popup.js && mv popup.js ./src/scripts",
+        "options": "rapydscript src/python/options.pyj > options.js && mv options.js ./src/scripts",
+        "convert": "npm run popup && npm run options"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^19.0.0",
+        "@rollup/plugin-node-resolve": "^13.0.0",
+        "rollup": "^2.49.0",
+        "rollup-plugin-chrome-extension": "^3.5.6"
+    }
+}

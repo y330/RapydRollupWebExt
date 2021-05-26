@@ -1,0 +1,5 @@
+def handleEventURL():
+	n = document.getElementById("event-url").value
+	document.getElementById("event-url_fragment").innerHTML = "n" + "/#:~:text="
+def log(me):
+	console.log(me)

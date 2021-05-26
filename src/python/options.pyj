@@ -1,0 +1,2 @@
+def greet_options():
+	alert("Hello World, but with options!")
