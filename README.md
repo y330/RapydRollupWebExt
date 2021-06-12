@@ -1,4 +1,4 @@
-# RapydWebpackExt
+# Rapyd Rollup Web Ext
 
 
 _under construction_
